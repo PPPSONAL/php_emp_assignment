@@ -230,6 +230,39 @@ public class Mobile : IMobile, ITelephone
 }
 ```
 
+**Call By Value**
+``` 
+In this method, only values of actual parameters are passing to the function. So there are two addresses stored in memory. Making changes in the passing parameter does not affect the actual parameter.
+ 
+Example
+<?php  
+function increment($var){  
+    $var++;  
+    return $var;  
+}  
+$a = 5;  
+$b = increment($a);  
+echo $a; //Output: 5  
+echo $b; //Output: 6   
+?>   
+```
+
+**Call by Reference**
+```
+In this method, the address of actual parameters is passing to the function. So any change made by function affects actual parameter value.
+ 
+Example
+<?php  
+function increment(&$var){  
+    $var++;  
+    return $var;  
+}  
+$a = 5;  
+$b = increment($a);  
+echo $a; //Output: 6  
+echo $b; //Output: 6   
+?>  
+```
 **Must go through**
 
 1.https://chartio.com/learn/databases/how-does-indexing-work/
