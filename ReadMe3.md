@@ -348,9 +348,14 @@ Abstract, Interface, traits
 	Like abstract classes, Interfaces cannot be instantiated, they can only be implemented by classes or extended by other interfaces.
 	Interface is a common way to achieve full abstraction
 	
-	Traits are a mechanism that provides some of the reuse advantages of multiple inheritance in languages like PHP where multiple inheritance is not 		supported. Traits enable developers to reuse combinations of methods from different class hierarchies.
-	Use keyword to use Traits
+	Traits 
+	Laravel traits are a group of functions that you include within another class. 
+	A trait is like an abstract class. You cannot instantiate directly, but its methods can be used in concreate class.
 	
+	- to achieve multiple inheritance in languages like PHP.
+	- reuse of code.
+	
+	Use keyword to use Traits
 	(three dots ...) and is referred to as either the splat operator or the scatter operator
 	function bar(...$arguments) to achieve method overloading in php
 
