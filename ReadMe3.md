@@ -50,6 +50,8 @@ Facade Design Pattern
 designing php architecture
 Difference between REST API and SOAP API
 How will I increase security in a Contact form using PHP
+Php error handling questions
+
 ```
 
 **Mysql**
