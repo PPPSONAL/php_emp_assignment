@@ -271,6 +271,9 @@ Abstract, Interface, traits
 	
 	Traits are a mechanism that provides some of the reuse advantages of multiple inheritance in languages like PHP where multiple inheritance is not 		supported. Traits enable developers to reuse combinations of methods from different class hierarchies.
 	Use keyword to use Traits
+	
+	(three dots ...) and is referred to as either the splat operator or the scatter operator
+	function bar(...$arguments) to achieve method overloading in php
 
 
 Error types in php
