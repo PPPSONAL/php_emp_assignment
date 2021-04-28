@@ -57,12 +57,13 @@ Mysql Engines?
 Primary Key, foreign key, Indexes
 How indexes works? https://chartio.com/learn/databases/how-does-indexing-work/
 Group by VS order by main Difference ?
+Joins? and Type of joins?
 Where and having by main Difference ?
 Get the last thee max salaried person from table via sql
 Query to get the 31st highest salary.
 SELECT DISTINCT(Salary) FROM table ORDER BY Salary DESC LIMIT n,1
 What is difference between stored procedures and functions 
-what is current version of mysql and php
+what is current version of mysql
 ```
 **HTML**
 ```
