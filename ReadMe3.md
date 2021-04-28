@@ -111,6 +111,52 @@ There were 2 of Polymorphism
             obj.animalSound();
         }
         }
+why we use polymorphism
+	The main idea for the polymorphism is to bring flexibility.
+	Let’s imagine you are an experienced car technician at a service shop that can repair any B-class car. If you put this concept in OOP format, you have to 
+	create a class called Technician as below:
+	class Technician{
+	 private String name;
+	 private Car car
+
+	 public Technician(String name){
+	  this.name = name;
+	 }
+	  /*
+	  ... getters and setters
+	  */
+
+	  public void repair(Car theCar){
+	    // ... the body of repair method
+	  }
+	}
+	
+	The point is here:
+	
+	The shop manager knows that you can repair any B-class car. Thus, if any customer with car models below comes to the shop and asks for a repair job, the           manager is confident that you can repair them successfully.
+	In OOP terms, the manager can call you (instantiate a Technician object) and ask you to repair a car (call you repair() method ). But wait, which type of           car the manager is going to pass as you theCar argument?
+	As a technician you are not worried about that. Because you can repair any sort of B-class car. As a result the codes below are all true and make sense:
+	{
+		Technician hatef = new Technician("Hatef");
+		// create several Car instances
+		Car yaris = new Toyota();
+		Car focus = new Ford();
+		Car azera = new Hyundai();
+		Renault megane = new Renault();
+		// create manager object
+		Manager manager = new Manager();
+		// now manager calls the technician to start repairing
+		hatef.repair(yaris); // hatef is able to repair any Car instances
+		hatef.repair(focus); // focus is a Car instance
+		hatef.repair(azera); // azera is a Car instance
+		// now, watch below code, it is wrong because of polymorphism violation. megane is not an object of Car class.
+		hatef.repair(megane);
+	}
+	But wait, why it is like so? why the code on last line is not right?
+	Answer:
+	Due to polymorphism objects like yaris, focus, azera are all reference variables of type Car that point to an object of different type. yaris points to a 	  Toyota. focus points to a Ford and azera points to a Hyundai.
+	BUT: megane is a reference variable of type Renault that points to a Renault object, so it is wrong to say: megane is a car !!!!
+	
 
 **Inheritance**
 
