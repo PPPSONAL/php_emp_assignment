@@ -29,7 +29,8 @@ Sql injection
 composer is dependency tool or not
 Git commands 
 gitHub
-Php unit 
+Php unit
+Send a mail with attachment using phpmailer 
 
 The MD5 cryptographic algorithm is not reversible or not
 Difference btwn Encryption and Hashing
