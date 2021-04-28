@@ -63,11 +63,12 @@ whereas mobile B is already connected to mobile C then A is not allowed to conne
 This is because of accessibility restriction.
 
 
-**Polymorphism** allows us to perform a single action in different ways.
-    There were 2 of Polymorphism
-    1) Static Polymorphism
-    Polymorphism that is resolved during compiler time is known as static polymorphism.
-    Method Overloading: This allows us to have more than one methods with same name in a class that differs in signature.
+**Polymorphism** 
+Polymorphism describes a pattern in Object Oriented Programming in which a class has varying functionality while sharing a common interfaces.
+
+There were 2 of Polymorphism
+    1)Compile time (function overloading)Method Overloading: This allows us to have more than one methods with same name in a class that differs in signature.
+    But PHP "does not support" compile time polymorphism, which means function overloading and operator overloading.
     class DisplayOverloading
         {
             public void disp(char c)
@@ -93,9 +94,9 @@ This is because of accessibility restriction.
         a
         a 10
 
-    2) Dynamic Polymorphism
-    Dynamic polymorphism is a process in which a call to an overridden method is resolved at runtime.
-    Method overridding:
+    2) Run time (function overriding) Method overridding:
+    	The Runtime polymorphism means that a decision is made at runtime (not compile time) or we can say we can have multiple subtype implements for a super 	           class,function overloading is an example of runtime polymorphism . I will first describe function overloading. When we create a function in a derived class         with the same signature (in other words a function has the same name, the same number of arguments and the same type of arguments) as a function in its             parent class then it is called method overriding.
+	
     class Animal{
         public void animalSound(){
             System.out.println("Default Sound");
