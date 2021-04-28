@@ -269,10 +269,17 @@ echo $b; //Output: 6
 2.https://arc.dev/interview/php-interview-questions-and-answers
 3.https://www.toptal.com/php/interview-questions
 
-```
+
 TDD (Test Driven Development)
-DD data-driven platform
 ```
+	The simple concept of TDD is to write and correct the failed tests before writing new code.
+	Test Driven Development (TDD) is software development approach in which test cases are developed to specify and validate what the code will do. In simple terms, test cases for each functionality are created and tested first and if the test fails then the new code is written in order to pass the test and making code simple and bug-free.
+
+	Test-Driven Development starts with designing and developing tests for every small functionality of an application. TDD instructs developers to write new code only if an automated test has failed. This avoids duplication of code. The full form of TDD is Test-driven development.
+
+```
+DD data-driven platform
+
 
 **PHP**
 	https://www.guru99.com/php-interview-questions-answers.html
