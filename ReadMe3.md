@@ -1,9 +1,9 @@
 **PHP**
 
 **Must go through**
-https://chartio.com/learn/databases/how-does-indexing-work/
-https://arc.dev/interview/php-interview-questions-and-answers
-https://www.toptal.com/php/interview-questions
+  https://chartio.com/learn/databases/how-does-indexing-work/
+  https://arc.dev/interview/php-interview-questions-and-answers
+  https://www.toptal.com/php/interview-questions
 
 Array sort function
 Array function
