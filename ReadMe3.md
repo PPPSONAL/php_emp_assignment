@@ -1,3 +1,188 @@
+**OPPs**
+
+```
+**Object **
+
+Object: is a bundle of data and its behaviour (known as methods).
+Objects have two characteristics: They have states and behaviors.
+
+Examples of states and behaviors
+Example 1:
+Object: House
+State: Address, Color, Area
+Behavior: Open door, close door
+class House {
+   String address;
+   String color;
+   double are;
+   void openDoor() {
+      //Write code here
+   }
+   void closeDoor() {
+      //Write code here
+   }
+ ...
+ ...
+}
+
+Example 2:
+Let’s take another example.
+Object: Car
+State: Color, Brand, Weight, Model
+Behavior: Break, Accelerate, Slow Down, Gear change.
+
+**Class**
+
+Class is blueprint using which you can create many objects.
+Mainly a class would consist of a properties, methods, fields, constructors, destructors, events, and so on.. 
+
+
+**OPP's characterristics**
+	Abstraction
+	Encapsulation
+	Polymorphism
+	Inheritance
+
+**Abstraction** allows us to expose limited data and functionality of objects publicly and hide the actual implementation.
+
+**Encapsulation** is defined as the process of enclosing one or more details from outside world through access right.
+
+Both Abstraction & Encapsulation works hand in hand because Abstraction says what details 
+to be made visible and Encapsulation provides the level of access right to that visible details.
+
+take an example for this Both
+
+Talking about Bluetooth which we usually have it in our mobile. When we switch on a Bluetooth, 
+
+I am able to connect to another mobile or bluetooth enabled devices but 
+I'm not able to access the other mobile features like dialing a number, accessing inbox etc. 
+This is because, Bluetooth feature is given some level of abstraction.
+
+Another point is when mobile A is connected with mobile B via Bluetooth 
+whereas mobile B is already connected to mobile C then A is not allowed to connect C via B.
+This is because of accessibility restriction.
+
+
+**Polymorphism** allows us to perform a single action in different ways.
+    There were 2 of Polymorphism
+    1) Static Polymorphism
+    Polymorphism that is resolved during compiler time is known as static polymorphism.
+    Method Overloading: This allows us to have more than one methods with same name in a class that differs in signature.
+    class DisplayOverloading
+        {
+            public void disp(char c)
+            {
+                System.out.println(c);
+            }
+            public void disp(char c, int num)  
+            {
+                System.out.println(c + " "+num);
+            }
+        }
+        public class ExampleOverloading
+        {
+        public static void main(String args[])
+        {
+            DisplayOverloading obj = new DisplayOverloading();
+            obj.disp('a');
+            obj.disp('a',10);
+        }
+        }
+
+        Output:
+        a
+        a 10
+
+    2) Dynamic Polymorphism
+    Dynamic polymorphism is a process in which a call to an overridden method is resolved at runtime.
+    Method overridding:
+    class Animal{
+        public void animalSound(){
+            System.out.println("Default Sound");
+        }
+        }
+        public class Dog extends Animal{
+
+        public void animalSound(){
+            System.out.println("Woof");
+        }
+        public static void main(String args[]){
+            Animal obj = new Dog();
+            obj.animalSound();
+        }
+        }
+
+**Inheritance**
+
+Is the process by which one class acquires the properties and functionalities of another class.
+Inheritance allows us to reuse of code, it improves reusability.
+The biggest advantage of Inheritance is that the code in base class need not be rewritten in the child class.
+**Types of Inheritance:**
+	Single level inheritance
+	Multi-level inheritance
+	Hierarchical inheritance
+	Hybrid inheritance
+	Multiple inheritance
+
+**Single inheritance**, there is single base class & a single derived class
+ i.e. - A base mobile features is extended by Samsung brand.
+ Mobile 
+   |
+Samsung
+
+**Multilevel inheritance**, there is more than one single level of derivation.
+ i.e. - After base features are extended by Samsung brand. 
+ Now Samsung brand has manufactured its new model with new added features or advanced OS 
+ like Android OS, v4.4.2 (kitkat).
+ Mobile 
+   |
+Samsung
+   |
+Samsung S8  
+
+**Hierarchical inheritance**, multiple derived class would be extended from base class,
+it's similar to single level inheritance but this time along with Samsung, Nokia is also taking part in inheritance.
+    Mobile 
+   |      |
+Samsung   Nokia
+
+Hybrid inheritance - Single, Multilevel, & hierarchal inheritance all together construct a hybrid inheritance.
+       Mobile 
+   |         |
+Samsung      Nokia
+   |         |
+Samsung S8   Nokia
+
+
+**Multiple inheritance** where derived class will extend from multiple base classes.
+
+IMobile   ITelephone
+      |   |
+     Samsung
+Multiple inheritance is not supported in PHP but can implement using Interface    
+Interface is defined with the keyword 'interface'.
+All properties & methods with in the interface should be implemented if it is been used. 
+
+interface IMobile  
+{  
+   Void Dial();  
+}  
+  
+interface ITelephone  
+{  
+   void Dial();  
+  
+}  
+  
+public class Mobile : IMobile, ITelephone  
+  
+{  
+    public void Dial()  
+    {  
+            Console.WriteLine("Dial a number");  
+    }     
+}
+```
 
 **Must go through**
 
