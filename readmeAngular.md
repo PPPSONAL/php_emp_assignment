@@ -3,6 +3,9 @@ https://www.edureka.co/blog/interview-questions/top-angularjs-interview-question
 https://dzone.com/articles/50-top-angular-interview-questions-amp-answers
 https://github.com/sudheerj/angular-interview-questions
 
+https://www.techgeeknext.com/angular/angular-interview-questions
+https://www.javatpoint.com/rxjs-interview-questions
+
 Question: What is Angular?
 ```
   Answer: 
