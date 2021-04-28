@@ -1,4 +1,7 @@
 https://www.interviewbit.com/angular-interview-questions/
+https://www.edureka.co/blog/interview-questions/top-angularjs-interview-questions-2016/#intermediate
+https://dzone.com/articles/50-top-angular-interview-questions-amp-answers
+https://github.com/sudheerj/angular-interview-questions
 
 Question: What is Angular?
 ```
@@ -527,4 +530,119 @@ catch() => catchError()
 finally() => finalize()
 switch()=>switchAll()
 throw() => throwError
+```
+
+Question: What Are ngIf and ngFor? Can You Show a Small Example to Use Them?
+```
+Answer: Just like if and for in other languages, ngIf and ngFor are used as control statements. Example –
+
+<p *ngIf="display">Show this only if the Boolean "display" is true</p>
+
+Where the display is a boolean with the value true or false. Learn more about ngIf.
+
+ngFor is used to loop through and display elements of an array (set of data).
+
+<tr *ngFor="let student of students; let i = index"> <td>{{student.name}}
+
+</td> <td>{{i}}</td> </tr>
+
+The second part (i=index) is optional and only needed if you want to display the index.
+```
+
+Question: Explain How You Can Chain Pipes
+```
+Answer: We can add any number of filters using pipes -
+
+<p>Average is {{ average | uppercase | number}}</p> 
+```
+Question: Is It Possible to Create a Custom Pipe? How?
+```
+Answer: Yes, we can create custom pipes.
+
+Pipe metadata @Pipe decorator can be imported from core Angular library
+Pipe is a class that is decorated with the above metadata (@Pipe({name: 'myCustomPipe'}))
+The next step is to define the transformation. For this, the pipe class should implement the method transform() of the PipeTransform class.
+Specify the pipe name in the main code
+<p>Size: {{number | myCustomPipe: 'Error'}}</p> 
+```
+Question: What Is the Purpose of an Async Pipe?
+```
+Answer: Async pipe subscribes to a promise or an observable, and returns the latest value. 
+If a new value is emitted, the pipe marks the component that needs to be checked for any changes.
+
+<code>observable|async</code>
+```
+Question: Explain the Importance of HttpClient.
+```
+Answer: HttpClient is a simplified Http API for Angular applications. 
+It gives better observable APIs, better error handling mechanisms, testability, request and response interception, typed request and response objects. 
+The HttpClientAPI rests on the XMLHttpRequest interface exposed by the browsers.
+```
+Question: How Does Angular Router Work?
+```
+Answer: Angular router interprets a browser URL as commands to navigate to a client-generated view. 
+The router is bound to the links on a page. This way Angular knows to navigate the application view to the required page when a user clicks on it.
+```
+Question: What Are the Router Navigation Events?
+```
+Answer: Router navigation events help track the lifecycle of a route. These are –
+
+NavigationStart,
+RouteConfigLoadStart,
+RouteConfigLoadEnd,
+RoutesRecognized,
+GuardsCheckStart,
+ChildActivationStart,
+ActivationStart,
+GuardsCheckEnd,
+ResolveStart,
+ResolveEnd,
+ActivationEnd
+ChildActivationEnd
+NavigationEnd,
+NavigationCancel,
+NavigationError
+Scroll
+```
+Question: Is the Routing Module Mandatory for an Application?
+```
+Answer: No, routing module can be totally skipped if there are simple configurations.
+```
+Question: What Is a Wildcard Route?
+```
+Answer: Wildcard route has the path that consists of two asterisks (**) that can match any URL. It is helpful when a URL doesn’t match any of the predefined routes. Instead of throwing error, we can use a wildcard route and defining a component for the same.
+```
+Question: What Are the Special Transition States?
+```
+Answer: Special transition states are wildcard (*) and void. Wildcard matches any animation state. The void state is used to configure transitions for elements entering or leaving a page.
+```
+Question: How Can You Disable All the Animations in Angular?
+```
+Answer: To disable all the animations, place the @.disabled host binding on the topmost Angular component.
+
+Explain the steps to create a reusable animation.
+To create an animation that can be reused, use the animation() method and define the animation in a separate .ts file. 
+Declare this animation as a const export variable. This can be then imported and reused in any app components that use the useAnimation() API. 
+```
+Question: Mention Some of the Functions That Help Control Complex Animation Sequences
+```
+Answer:
+
+query()	finds one or more inner HTML elements within the current element being animated in the sequence
+stagger()	applies a cascading delay (timing gap) after each animation
+group()	runs multiple animation steps in parallel.
+sequence()	runs animation steps one after another (sequentially)
+```
+Question: Explain the Features of Forms in Angular.
+```
+Answer: There are two approaches to handle form data (user inputs) – reactive and template-driven.
+
+Reactive forms can be used when you are using reactive patterns in your application and forms are a key part of your application. These forms are scalable, robust and testable.
+
+Template-driven forms are used to add simple forms, for example, a sign-up page. These are not as scalable as reactive forms and should be used only if your form requirements are simple and minimal.
+```
+
+Question: Which Is the Latest Version of Angular? What Are the New Features in It?
+```
+
 ```
