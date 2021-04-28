@@ -189,7 +189,12 @@ public class Mobile : IMobile, ITelephone
 1.https://chartio.com/learn/databases/how-does-indexing-work/
 2.https://arc.dev/interview/php-interview-questions-and-answers
 3.https://www.toptal.com/php/interview-questions
-	
+
+```
+TDD (Test Driven Development)
+DD data-driven platform
+```
+
 **PHP**
 	https://www.guru99.com/php-interview-questions-answers.html
 
@@ -320,6 +325,7 @@ Query to get the 31st highest salary.
 SELECT DISTINCT(Salary) FROM table ORDER BY Salary DESC LIMIT n,1
 What is difference between stored procedures and functions 
 what is current version of mysql
+Difference b/w SQL and NoSql
 ```
 **HTML**
 ```
@@ -359,4 +365,23 @@ How to disable CSRF protection in Laravel?
 Event handling and Event binding in Laravel?
 Advantages and Disadvantages of Laravel? 
 what is the view composer?
+
+Lumen vs Node.js: What are the differences?
+	Lumen: The stunningly fast PHP micro-framework by Laravel. Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with 		expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of 	    development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching; Node.js: A platform         built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that             makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices.
+	Lumen can be classified as a tool in the "Microframeworks (Backend)" category, while Node.js is grouped under "Frameworks (Full Stack)".
+	"API" is the top reason why over 16 developers like Lumen, while over 1320 developers mention "Npm" as the leading cause for choosing Node.js.
+	Lumen and Node.js are both open source tools. Node.js with 35.5K GitHub stars and 7.78K forks on GitHub appears to be more popular than Lumen                       with 6.29K GitHub stars and 833 GitHub forks.
+	
+	According to the StackShare community, Node.js has a broader approval, being mentioned in 4055 company stacks & 3897 developers stacks; compared to Lumen,         which is listed in 24 company stacks and 24 developer stacks.
+
+
+	NodeJS: Talking about Node JS, it is not a framework but a server also. Based on JS, it embeds all the features above, meaning that no more multi-threading         and not meant for the beginners. So, NodeJS is a fundamental sense of a JS server that primarily acts as server-side browsing. It is open-source and eases         the development of cross-platform web applications. The primary reason why developers like working on Node JS is the fact that it works on a single thread.         The entire server is event-based and causes on receiving callbacks. This enables the server to come back every time it is called and prevents it from being         a pause or in a sleep state. 
+	
+	Advantages: 
+	* The performance of an app developed using NodeJS is higher than others.
+	* It comes along with an excellent package manager.
+	* NodeJS has extended support in the form of libraries.
+	* Works best when you need to build APIs.
+	* It provides quick and easy handling of users concurrent requests.
+
 ```
