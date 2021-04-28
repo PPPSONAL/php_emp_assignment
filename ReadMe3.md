@@ -378,6 +378,18 @@ how to send a http request in php?
 How to call Curl
 Session n cookies
 Sql injection 
+	A malicious code injected in SQL statements, via user input, can destroy your database.
+	example
+	1. 105 OR 1=1
+	2. 105; DROP table user;
+	
+how do you prevent them
+	1. we should always check & escape all user input.
+	2. use prepared statements everywhere consistently
+	
+what are the best practices
+	use PDO
+	
 composer is dependency tool or not
 Git commands 
 gitHub
