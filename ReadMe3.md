@@ -1,10 +1,13 @@
-**PHP**
 
 **Must go through**
-  https://chartio.com/learn/databases/how-does-indexing-work/
-  https://arc.dev/interview/php-interview-questions-and-answers
-  https://www.toptal.com/php/interview-questions
 
+1.https://chartio.com/learn/databases/how-does-indexing-work/
+2.https://arc.dev/interview/php-interview-questions-and-answers
+3.https://www.toptal.com/php/interview-questions
+	
+**PHP**
+
+```
 Array sort function
 Array function
 String function
@@ -46,9 +49,10 @@ Facade Design Pattern
 designing php architecture
 Difference between REST API and SOAP API
 How will I increase security in a Contact form using PHP
-
+```
 
 **Mysql**
+```
 Mysql Engines?
 Primary Key, foreign key, Indexes
 How indexes works? https://chartio.com/learn/databases/how-does-indexing-work/
@@ -59,24 +63,26 @@ Query to get the 31st highest salary.
 SELECT DISTINCT(Salary) FROM table ORDER BY Salary DESC LIMIT n,1
 What is difference between stored procedures and functions 
 what is current version of mysql and php
-
+```
 **HTML**
+```
 Symantic element  - meaningful and readable
 API used in html 5
 Html 5 tags classification 
 Optimal capacity the browser can store -10mb
 empty div and span is the related with each other
 Sudo class n element
-
+```
 **Javascirpt**
+```
 CDN - content domain network hosted across the multiple geographical location.
 Why JSON is Better Than XML
 Cross browser compatibility
 Javascript Inline function 
 What is difference between real DOM and virtual DOM
-
+```
 **Laravel **
-
+```
 (Life cycle of laravel, What happens when you make a request to Laravel)
 What are migrations in Laravel ,how to create migrations
 What is a csrf token 
@@ -94,3 +100,4 @@ How to disable CSRF protection in Laravel?
 Event handling and Event binding in Laravel?
 Advantages and Disadvantages of Laravel? 
 what is the view composer?
+```
