@@ -6,9 +6,9 @@
 3.https://www.toptal.com/php/interview-questions
 	
 **PHP**
+	https://www.guru99.com/php-interview-questions-answers.html
 
 ```
-https://www.guru99.com/php-interview-questions-answers.html
 
 Array sort function
 	Sort() sort array ascending order
@@ -154,9 +154,9 @@ Javascript Inline function
 What is difference between real DOM and virtual DOM
 ```
 **Laravel **
-```
-https://www.guru99.com/laravel-interview-questions.html
+	https://www.guru99.com/laravel-interview-questions.html
 
+```
 (Life cycle of laravel, What happens when you make a request to Laravel)
 What are migrations in Laravel ,how to create migrations
 What is a csrf token 
