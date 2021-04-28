@@ -95,7 +95,7 @@ There were 2 of Polymorphism
         a 10
 
     2) Run time (function overriding) Method overridding:
-    	The Runtime polymorphism means that a decision is made at runtime (not compile time) or we can say we can have multiple subtype implements for a super 	           class,function overloading is an example of runtime polymorphism . I will first describe function overloading. When we create a function in a derived class         with the same signature (in other words a function has the same name, the same number of arguments and the same type of arguments) as a function in its             parent class then it is called method overriding.
+    	The Runtime polymorphism means that a decision is made at runtime (not compile time) or we can say we can have multiple subtype implements for a super 		class,function overloading is an example of runtime polymorphism . I will first describe function overloading. When we create a function in a derived class         with the same signature (in other words a function has the same name, the same number of arguments and the same type of arguments) as a function in its             parent class then it is called method overriding.
 	
     class Animal{
         public void animalSound(){
