@@ -454,6 +454,17 @@ What is difference between real DOM and virtual DOM
 	https://www.guru99.com/laravel-interview-questions.html
 
 ```
+	**JWT- **
+	header.payload.signature
+
+	Client side we needs to store it, but on server side we don't need to store.
+
+	JWT have all the claims in itself and is signed by the server as well. 
+	On receipt, server checks for the signature and reads the claims. 
+	It does not match it against a stored value. 
+	That is the whole point of using JWT against access tokens.
+
+
 (Life cycle of laravel, What happens when you make a request to Laravel)
 What are migrations in Laravel ,how to create migrations
 What is a csrf token 
