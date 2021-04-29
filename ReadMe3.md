@@ -456,6 +456,9 @@ What is difference between real DOM and virtual DOM
 ```
 	**JWT- **
 	header.payload.signature
+	header  - algo for token generation + the type of token
+	payload - authenticated user details + issued timestamp + exp timestamp (when the token will be expired)
+	signature - this is use to check the token is not modified after securing signatured by the server with secret key.
 
 	Client side we needs to store it, but on server side we don't need to store.
 
