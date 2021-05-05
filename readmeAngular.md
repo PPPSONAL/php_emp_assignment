@@ -16,7 +16,9 @@ Adding to this, it also helps you to build Single page App, It also has boasts o
 ```
 
 Is the Routing Module Mandatory for an Application?
-```No, routing module can be totally skipped if there are simple configurations.```
+``` 
+No, routing module can be totally skipped if there are simple configurations.
+```
 
 What are Lifecycle hooks in Angular? Explain some life cycles hooks.
 ```
@@ -38,7 +40,8 @@ Angular hooks provide ways to tap into these phases and trigger changes at speci
   ngOnDestroy(): It gets called just before Angular destroys the component. This hook can be used to clean up the code and detach event handlers.
 ```
 Explain the Features of Forms in Angular.
-```There are two approaches to handle form data (user inputs) – reactive and template-driven.
+``` 
+There are two approaches to handle form data (user inputs) – reactive and template-driven.
 
 Reactive forms can be used when you are using reactive patterns in your application and forms are a key part of your application. These forms are scalable, robust and testable.
 
@@ -66,25 +69,34 @@ Directives helps us to attached behavior to HTML DOM,
 or in simplified words, Directives are angular syntax writer inside HTML which go and change the behavior of HML DOM, example ngModel, hidden, disabled etc.
 ```
 Explain Different types of directive?
-```There 3 types of directive,
+```
+There 3 types of directive,
 Structural - change the DOM layout by adding and removing elements. Structural directive actually change the structure of html DOM eg. ngFor, ngIf 
 Attribute - change the appearance and behavior of HTML element eg. hide, show disabled 
 Component - is a Custom User control, in which it has it own UI, templates, components. Eg Child components or we can add dynamic components to HTML DOM.
 ```
 Differentiate between Components and Directives in Angular 5.
-```Components break up the application into smaller parts; whereas, Directives add behavior to an existing DOM element.```
+```
+Components break up the application into smaller parts; whereas, Directives add behavior to an existing DOM element.
+```
 
 What is the use of @Input and @Output?
-```When it comes to the communication of Angular Components```
+``` 
+When it comes to the communication of Angular Components.
+```
 
 What does a router.navigate do
-```In typescript class to navigate to the different url.```
+``` 
+In typescript class to navigate to the different url.
+```
 
 
 Explain importance of NPM and node_modules folder?
-```NPM stands for Node package manager which helps us to install and update the javascript package. Generic cmd is npm install package name
+```
+NPM stands for Node package manager which helps us to install and update the javascript package. Generic cmd is npm install package name
 node_modules is the folder where all the packages are installed.
 In my current working project Have used ng2-charts, ngx-toastr, froala-editor, bootstrap
+
 ```
 What is the importance package.json file in angular?
 ```
@@ -105,11 +117,13 @@ The list of packages that are required only for development. This packages are i
 ```
 
 What is Typescript and why do we need it?
-```Typescript is superset of Javascript, it add types to Javascript.  It’s also follow Oops which finally transpiles and converts to javascript.
+```
+Typescript is superset of Javascript, it add types to Javascript.  It’s also follow Oops which finally transpiles and converts to javascript.
 Typescript helps speed up in development, good quality product as it follows Opps.
 ```
 What is the importance Angular CLI?
-```CLI stands for command line interface, which help us to create initials project setup with basic source code, package.json etc. rather that starting from the scratch we can kick start from base code that helps us to increase productivity.
+```
+CLI stands for command line interface, which help us to create initials project setup with basic source code, package.json etc. rather that starting from the scratch we can kick start from base code that helps us to increase productivity.
 ```
 What is the importance  of Components and Modules?
 ```
@@ -131,7 +145,8 @@ So in simplified words, Modules are containers for a block of code dedicated to 
 * bootstrap: The main application view, called the root component, which hosts all other app views. Only the root NgModule should set the bootstrap property.
 ```
 What is decorator, Annotation and metadata in Angular?
-```It defines what kind of angular class it is. eg. If we decorate @component then it says it is an angular component, if we decorate @NgModule it becomes angular Module if we decorate @Directive the it becomes Directive class
+```
+It defines what kind of angular class it is. eg. If we decorate @component then it says it is an angular component, if we decorate @NgModule it becomes angular Module if we decorate @Directive the it becomes Directive class
 ```
 What are the Pipes?
 ```
@@ -139,7 +154,8 @@ This feature is used to change the output on the template; something like changi
 ```
 
 Is It Possible to Create a Custom Pipe? How?
-```Yes, we can create custom pipes.
+```
+Yes, we can create custom pipes.
 
 Pipe metadata @Pipe decorator can be imported from core Angular library
 Pipe is a class that is decorated with the above metadata (@Pipe({name: 'myCustomPipe'}))
@@ -149,7 +165,9 @@ Specify the pipe name in the main code
 ```
 
 What is template in Angular?
-```template are nothing but html code, In components we can define template inline or as separate HTML file.```
+```
+template are nothing but html code, In components we can define template inline or as separate HTML file.
+```
   
 What are the type of Data binding in Angular?
 ```
@@ -219,16 +237,20 @@ Authentication: The user login credentials are passed to an authenticate API (on
 Authorization: After logging in successfully, the authenticated or genuine user does not have access to everything. The user is not authorized to access someone else’s data,  he/she is authorized to access some data. 
 ```
 What Is the Purpose of an Async Pipe?
-```Async pipe subscribes to a promise or an observable, and returns the latest value. 
+```
+Async pipe subscribes to a promise or an observable, and returns the latest value. 
 If a new value is emitted, the pipe marks the component that needs to be checked for any changes.
 <code>observable|async</code>
 ```
 
 Differentiate between ng-Class and ng-Style.
-```In ng-Class, loading of CSS class is possible; whereas, in ng-Style we can set the CSS style.```
+```
+In ng-Class, loading of CSS class is possible; whereas, in ng-Style we can set the CSS style.
+```
 
 Explain the Importance of HttpClient.
-```HttpClient is a simplified Http API for Angular applications. 
+```
+HttpClient is a simplified Http API for Angular applications. 
 It gives better observable APIs, better error handling mechanisms, testability, request and response interception, typed request and response objects.
 ```
 	
@@ -240,10 +262,13 @@ We have many UI blocks like header, footer, left Menu , banner etc this UI is lo
 ```
 
 How do we can implement SPA in Angular?
-```To implement SPA in Angular we need to user angular routings.```
+```
+To implement SPA in Angular we need to user angular routings.
+```
 
 What exactly routing is?
-```Is s simple collection of url and the name of component to load after the url get called.
+```
+Is s simple collection of url and the name of component to load after the url get called.
 The main goal of routing is to define navigation in angular application.
 <router-outlet></router-outlet>
 [routerLink]=“{{}}”
@@ -251,27 +276,40 @@ Route.navigate([‘/url’])
 ```
 
 Explain lazy loading ?
-```lazy loading means on demand loading, Loading only the necessary Html, css, and javascript files so that we can have better performance.```
+```
+lazy loading means on demand loading, Loading only the necessary Html, css, and javascript files so that we can have better performance.
+```
 
 How to implement  lazy loading?
-```We need to do 2 things very 1st is to divide our projects in to modules and the 2nd one is in the routing we need to use loadChildren to load the module.```
+```
+We need to do 2 things very 1st is to divide our projects in to modules and the 2nd one is in the routing we need to use loadChildren to load the module.
+```
 
 Defines Services 
-```Services helps to share common logic across the project```
+```
+Services helps to share common logic across the project.
+```
 
 Dependency injection?
-```Dependency injection is an application design pattern where rather than creating an object instance within the component, angular inject it via constructor or by provider attribute```
+```
+Dependency injection is an application design pattern where rather than creating an object instance within the component, angular inject it via constructor or by provider attribute.
+```
 
 What is benefit of using Dependency injection?
-```It helps us to decouple class dependancies. So when you add new dependencies you don’t need to change everywhere.```
+```
+It helps us to decouple class dependancies. So when you add new dependencies you don’t need to change everywhere.
+```
 
 Difference in ng serve and ng build ?
-```Ng serve builds application in memory in RAM where ng build builds application into hard dis	k. 
+```
+Ng serve builds application in memory in RAM where ng build builds application into hard dis	k. 
 So whenever your doing development ng serve is good but for production then we need to use ng build
 Ng build actually create a folder list inside your project folder and add final compile code and all the binaries in to folder  
 ```
 Explain —prod in ng build ?
-```—prod flag create a build with compress your JS files, removes comments, make your application ready for production```
+```
+**—prod** flag create a build with compress your JS files, removes comments, make your application ready for production.
+```
 
 What are the adv and disadvantages of angular?
 ```
@@ -288,28 +326,41 @@ Bundle size is big some time when it comes to big project although we can compre
 ```
 
 Change detection in angular?
-```Is mechanism which care about view rendering id data changes, it being trigger when some event happens in the application like keyup, click or an ajax, set interval and set timeout  ```
+```
+Is mechanism which care about view rendering id data changes, it being trigger when some event happens in the application like keyup, click or an ajax, set interval and set timeout
+```
 
-ngZone - ```is library which utilize angular in order to track the events. And when it happens it tells angular that the changes has happened```
+ngZone - 
+```
+is library which utilize angular in order to track the events. And when it happens it tells angular that the changes has happened
+```
 
 
 What is Angular Material?
-```It is a UI component library. Angular Material helps in creating attractive, consistent, 
+```
+It is a UI component library. Angular Material helps in creating attractive, consistent, 
 and fully functional web pages as well as web applications. 
 ```
 
 What is RxJS
-```Reactive extensions for Javascript, is a library which implement concept of reactive programming in application
 ```
-reactive programming - ```which deals with async data streams.```
+Reactive extensions for Javascript, is a library which implement concept of reactive programming in application
+```
+reactive programming - 
+```
+which deals with async data streams.
+```
 
 Advantage of reactive programming
-```reactive programming provide lots of operator which make our work easy.
+```
+reactive programming provide lots of operator which make our work easy.
 Helps in callback problems.
 It make async and complex threading very easy.
 ```
 Disadvantage of reactive programming
-```Debugging the code with observable is difficult.```
+```
+Debugging the code with observable is difficult.
+```
 
 RxJS stream?
 ```
@@ -318,7 +369,9 @@ RxJS stream?
 ```
 
 What should we know before learn RxJs
-```We should must have basic knowledge of javascript and angular 	```
+```
+We should must have basic knowledge of javascript and angular
+```
 
 What are the most outstanding feature of RxJS
 ```
@@ -338,7 +391,9 @@ observables can emit multiple values but promise only emit single value.
 ```
 
 What is Subject in RxJS? What kind of subject do you know?
-```Subject is an observable  that can multicast. I.e talks to many observers. Suppose we have a button  with an events listener.  The function attached to the event using addEventlistener  is called every time when user clicks on the button. Similar functionality goes to Subject too.```
+```
+Subject is an observable  that can multicast. I.e talks to many observers. Suppose we have a button  with an events listener.  The function attached to the event using addEventlistener  is called every time when user clicks on the button. Similar functionality goes to Subject too.
+```
 
 Observables are unicast, Subjects are multicast.
 
