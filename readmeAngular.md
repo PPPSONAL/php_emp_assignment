@@ -238,15 +238,20 @@ Although the digest cycle process gets triggered implicitly, it is possible to s
 ```
 Explain Authentication and Authorization.
 ```
-Authentication: The user login credentials are passed to an authenticate API (on the server). On the server side validation of the credentials happens and a JSON Web Token (JWT) is returned. JWT is a JSON object that has some information or attributes about the current user.  Once the JWT is given to the client, the client or the user will be identified with that JWT.
+Authentication: The user login credentials are passed to an authenticate API (on the server). 
+On the server side validation of the credentials happens and a JSON Web Token (JWT) is returned. 
+JWT is a JSON object that has some information or attributes about the current user.  
+Once the JWT is given to the client, the client or the user will be identified with that JWT.
 
 Authorization: After logging in successfully, the authenticated or genuine user does not have access to everything. The user is not authorized to access someone else’s data,  he/she is authorized to access some data. 
 ```
 What Is the Purpose of an Async Pipe?
 ```
-Async pipe subscribes to a promise or an observable, and returns the latest value. 
-If a new value is emitted, the pipe marks the component that needs to be checked for any changes.
+The async pipe subscribes to an Observable or Promise and returns the latest value it has emitted. 
+When a new value is emitted, the async pipe marks the component to be checked for changes. When the component gets destroyed, the async pipe unsubscribes automatically to avoid potential memory leaks.
+
 <code>observable|async</code>
+
 ```
 
 Differentiate between ng-Class and ng-Style.
