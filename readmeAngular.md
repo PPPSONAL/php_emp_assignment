@@ -396,7 +396,10 @@ Observer - is an object with next(), error() and complete() methods, which are c
 Observables - observable as an interface to handle a variety of common asynchronous operations. 
 Subscription - the role comes in to the picture when observable is created.
 Operator - is pure functions that take observables as input and output is also an observable
-Subject - Subject is an observable  that can multicast. I.e talks to many observers. Suppose we have a button  with an events listener.  The function attached to the event using addEventlistener  is called every time when user clicks on the button. Similar functionality goes to Subject too.
+Subject - Subject is an observable  that can multicast. i.e talks to many observers. 
+Suppose we have a button  with an events listener.  
+The function attached to the event using addEventlistener is called every time when user clicks on the button. 
+Similar functionality goes to Subject too.
 ```
 
 What id the diff in observables and promise 
@@ -409,7 +412,10 @@ observables can emit multiple values but promise only emit single value.
 
 What is Subject in RxJS? What kind of subject do you know?
 ```
-Subject is an observable  that can multicast. I.e talks to many observers. Suppose we have a button  with an events listener.  The function attached to the event using addEventlistener  is called every time when user clicks on the button. Similar functionality goes to Subject too.
+Subject is an observable  that can multicast. I.e talks to many observers. 
+Suppose we have a button  with an events listener.  
+The function attached to the event using addEventlistener is called every time when user clicks on the button. 
+Similar functionality goes to Subject too.
 ```
 
 Observables are unicast, Subjects are multicast.
