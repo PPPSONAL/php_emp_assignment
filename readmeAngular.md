@@ -262,8 +262,13 @@ In ng-Class, loading of CSS class is possible; whereas, in ng-Style we can set t
 
 Explain the Importance of HttpClient.
 ```
-HttpClient is a simplified Http API for Angular applications. 
-It gives better observable APIs, better error handling mechanisms, testability, request and response interception, typed request and response objects.
+HttpClient is a simplified package of Angular applications to called Http API. 
+It provides: 
+Observable APIs, 
+Error handling mechanisms, 
+Testability,
+Request and response interception, 
+Typed request and response objects.
 ```
 	
 What is SPA in Angular?
