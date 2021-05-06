@@ -269,7 +269,21 @@ echo $b; //Output: 6
 2.https://arc.dev/interview/php-interview-questions-and-answers
 3.https://www.toptal.com/php/interview-questions
 
-
+HTTP
+```
+request-response protocol, HTTP gives users a way to interact 
+with web resources by transmitting messages between clients and servers. 
+```
+TCP
+```
+ Transmission Control Protocol (TCP) is a communications standard that enables application programs 
+ and computing devices to exchange messages over a network.
+ ```
+PHP-FPM
+```
+PHP-FPM is faster than traditional CGI-based methods, for multi-user PHP environments. 
+It does not overload a system's memory with PHP from Apache processes.
+```
 TDD (Test Driven Development)
 ```
 	The simple concept of TDD is to write and correct the failed tests before writing new code.
