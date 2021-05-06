@@ -41,11 +41,11 @@ Angular hooks provide ways to tap into these phases and trigger changes at speci
 ```
 Explain the Features of Forms in Angular.
 ``` 
-1)There are two approaches to handle form data (user inputs) – reactive and template-driven.
-2)Template-driven forms make use of the "FormsModule", while reactive forms are based on "ReactiveFormsModule".
-3)Template-driven forms are asynchronous in nature, whereas Reactive forms are mostly synchronous.
-In a template-driven approach, most of the logic is writen into the template, whereas in reactive-driven approach, 
-the logic writer mainly in the component or typescript code. 
+There are two approaches to handle form data (user inputs) – reactive and template-driven.
+1)Template-driven forms make use of the "FormsModule", while reactive forms are based on "ReactiveFormsModule".
+2)Template-driven forms are asynchronous in nature, whereas Reactive forms are mostly synchronous.
+3)In a template-driven approach, most of the logic is writen into the template, whereas in reactive-driven approach, 
+  the logic writer mainly in the component or typescript code. 
 
 4) Template-driven forms are used to add simple forms. 
    These are not as scalable as reactive forms and should used if form requirements are very simple and minimal.for example, a sign-up page.
