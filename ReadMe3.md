@@ -263,6 +263,19 @@ echo $a; //Output: 6
 echo $b; //Output: 6   
 ?>  
 ```
+
+10 Tips for 10x Application Performance
+```
+Tip 1 – Accelerate and Secure Applications with a Reverse Proxy Server
+	If your web application runs on a single machine instance, then it obvious to have performance problems. 
+	just get a faster machine, with more processor, more RAM, a fast disk array, and for all these AWS provide us to add EC2 at any point of contact.
+	we can use of 
+	Load balancing, 
+	Caching static files, 
+	Securing your site from getting called by spam user,
+	Compress Data
+	
+```
 **Must go through**
 
 1.https://chartio.com/learn/databases/how-does-indexing-work/
