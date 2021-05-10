@@ -525,6 +525,9 @@ select * from (select dept as dept, sum(salary) as sumofSalary, count(name) as e
 **Can you tell the order of SQL SELECT statement?**
 SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY
 
+**What is the order of query execution in subqueries?**
+
+SQL executes innermost sub query first, and then the next level. The results of the sub query are the query conditions of the primary query.
 ```
 **HTML**
 ```
