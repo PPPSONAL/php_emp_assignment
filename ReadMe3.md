@@ -307,6 +307,30 @@ This is different from a forward proxy, where the proxy sits in front of the cli
 2.https://arc.dev/interview/php-interview-questions-and-answers
 3.https://www.toptal.com/php/interview-questions
 
+How Apache communicate with PHP?
+```
+Step 1 The user enters https://stackoverflow.com into their browser and taps/hits 'enter'.
+
+Step 2 The browser sends the page request over the Internet to the web server.
+
+Step 3 The web server gets the request and analyzes the request information. 
+Apache realizes that we didn't specify a file, so it looks for a directory index and finds index.php.
+
+Step 4 Since Apache knows to send files that end with the .php file extension to the PHP interpreter, it asks PHP to execute the file. 
+This knowledge of Apache is specified in the httpd.conf file, it tells Apache exactly what to do when it find the .php files.
+
+Step 5 PHP Interpreter is executing the code contained in the index.php file from the request.
+During this step, PHP may interact with databases, the file system or make external API calls, amongst other things.
+
+Step 6 After PHP Interpreter has finished executing the index.php file, it sends the output back to Apache. 
+Note that the output will be HTML.
+
+Step 7 Apache receives the output from PHP and sends it back over the Internet to a user's web browser. 
+This is called the response.
+
+Step 8 The user's web browser receives the response from the server, and renders the web page on a computer or device.
+```
+
 HTTP
 ```
 request-response protocol, HTTP gives users a way to interact 
