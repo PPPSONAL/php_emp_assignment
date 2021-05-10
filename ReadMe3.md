@@ -537,8 +537,25 @@ What is difference between real DOM and virtual DOM
 **Laravel **
 	https://www.guru99.com/laravel-interview-questions.html
 
+What is Rate limit?
 ```
-	**JWT- **
+Rate limiting is the control of the number of requests per unit time. It can be applied to ports, IPs, routes, etc.
+```
+
+How can I increase my request limit in laravel?
+```
+Laravel simplifies the process of limiting the number of requests a client could make for a particular action.
+Eg.
+Laravel Docs: 
+Route::middleware('auth:api', 'throttle:60,1')->group(function () { Route::get('/user', function () { // }); });
+```
+
+What is no rate limit?
+```
+No rate limit means their is no mechanism to protect against the requests you made in a short frame of time.
+```
+**JWT- **
+```
 	header.payload.signature
 	header  - algo for token generation + the type of token
 	payload - authenticated user details + issued timestamp + exp timestamp (when the token will be expired)
