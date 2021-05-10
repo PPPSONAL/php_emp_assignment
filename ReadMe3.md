@@ -517,10 +517,10 @@ What is difference between stored procedures and functions
 what is current version of mysql
 Difference b/w SQL and NoSql
 **find the number of employee of each department**
-SELECT emp_dept, COUNT(*) FROM emp_details GROUP BY emp_dept;
+	SELECT emp_dept, COUNT(*) FROM emp_details GROUP BY emp_dept;
 
 **find the sum of salary of emp where number of employees greater than 5. **
-select * from (select dept as dept, sum(salary) as sumofSalary, count(name) as emp_count from scientist  GROUP BY dept) AS T where emp_count > 2
+	select * from (select dept as dept, sum(salary) as sumofSalary, count(name) as emp_count from scientist  GROUP BY dept) AS T where emp_count > 2
 
 **Can you tell the order of SQL SELECT statement?**
 SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY
@@ -528,7 +528,13 @@ SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY
 **What is the order of query execution in subqueries?**
 
 SQL executes innermost sub query first, and then the next level. The results of the sub query are the query conditions of the primary query.
+
+** SELECT statement find the version of the server you are running and print the name of the current database? **
+	SELECT VERSION(), DATABASE();
+	
 ```
+
+
 **HTML**
 ```
 Symantic element  - meaningful and readable
