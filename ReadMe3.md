@@ -64,7 +64,7 @@ This is because of accessibility restriction.
 
 
 **Polymorphism** 
-We can say Polymorphism is a pattern pattern where classes can same or different functionality when they share a common interfaces.
+We can say Polymorphism is a design pattern where classes can have same or different functionality when they share a common interfaces.
 
 There were 2 of Polymorphism
     1)Compile time (function overloading)Method Overloading: This allows us to have more than one methods with same name in a class that differs in signature.
