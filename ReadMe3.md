@@ -276,6 +276,31 @@ Tip 1 – Accelerate and Secure Applications with a Reverse Proxy Server
 	Compress Data
 	
 ```
+
+Why Nginx is needed?
+```
+
+NGINX is open source software for web serving, reverse proxying, caching, load balancing, media streaming, and more. ... 
+In addition to its HTTP server capabilities, NGINX can also function as a proxy server for email (IMAP, POP3, and SMTP) and a reverse proxy and load balancer for HTTP, TCP, and UDP servers.
+```
+Why reverse proxy is called reverse?
+```
+For example, a corporation may run a dozen different web sites behind a firewall. 
+A reverse proxy would be programmed so that incoming requests for "site1.corporate.example.com" will be forwarded to the real web server for that site. ... 
+The phrase "nginx reverse proxy" means the nginx server configured as a reverse proxy
+
+```
+
+Is reverse proxy secure?
+```
+A reverse proxy can be used to secure multiple web servers in an organization from web application vulnerabilities. 
+The reverse proxy also provides additional benefits including hiding of the web servers and improved performance.
+```
+What is a reverse proxy vs proxy?
+```
+How is a reverse proxy different? A reverse proxy is a server that sits in front of one or more web servers, intercepting requests from clients. 
+This is different from a forward proxy, where the proxy sits in front of the clients.
+```
 **Must go through**
 
 1.https://chartio.com/learn/databases/how-does-indexing-work/
@@ -292,6 +317,7 @@ TCP
  Transmission Control Protocol (TCP) is a communications standard that enables application programs 
  and computing devices to exchange messages over a network.
  ```
+ 
 PHP-FPM
 ```
 PHP-FPM is faster than traditional CGI-based methods, for multi-user PHP environments. 
