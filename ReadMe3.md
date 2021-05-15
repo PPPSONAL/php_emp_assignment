@@ -551,7 +551,13 @@ Why JSON is Better Than XML
 Cross browser compatibility
 Javascript Inline function 
 What is difference between real DOM and virtual DOM
+
 ```
+ sessionStorage is similar to localStorage but the diff
+```
+the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends.
+```
+
 **Laravel **
 	https://www.guru99.com/laravel-interview-questions.html
 
