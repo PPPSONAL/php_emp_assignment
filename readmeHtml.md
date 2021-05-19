@@ -91,7 +91,7 @@ geolocation API
 <tbody>
 <tr>
 <td><code>only script </code></td>
-<td><em>Document order</em>. Their document order doesn’t matter – which loads first runs first</td>
+<td><em>Document order </td>
 <td>If there’s a bulky script at the top of the page, it blocks the page content to get load</td>
 </tr>    
 <tr>
