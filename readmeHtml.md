@@ -107,9 +107,45 @@ geolocation API
 </tbody>
 </table>
     
-**Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?**
+**Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? 
+```
+    CSS files are linked in the head because they get applied regardless of DOM already rendered or not. 
+    Hence the webpage looks elegant as soon as the page loads.
+    AND 
+    browser try to parses and executes the JS on the spot.
+    And if we added at the top, it would make the page rendering slow.
+    
+```
+    
 **What is progressive rendering?**
+```
+    Progressive rendering is the techniques used to render content as quickly as possible.
+    e.g
+    1) Lazy loading 
+       By using javascript algo load an image which comes into the browsers viewport instead of loading all images at page load.
+    
+    2) Prioritizing visible content:
+    Include minimum css/content/scripts necessary first rendered content in the users browser.
+    
+```
+    
 **Why you would use a srcset attribute in an image tag? Explain the process the browser uses when evaluating the content of this attribute.**
-**Have you used different HTML templating languages before?**
+```
+    **Difference between srcset and picture. **
+    Both srcset and picture does approximately the same things, 
+    picture dictates what image the browser should use, 
+    whereas srcset gives the browser a choice. 
+    A lot of things can be used to select this choice like viewport size, users preferences, network condition and so on.
+    e.g
+    srcset="image.jpg 160w, image2.jpg 320w, image3.jpg 2x"
+    
+```
 **What is the difference between canvas and svg?**
+```
+SVG is a language for describing 2D graphics in XML. / Canvas draws 2D graphics, on the fly. 
+SVG is XML based, which means that every element is available within the SVG DOM.  / Canvas is rendered pixel by pixel. 
+```    
 **What are empty elements in HTML ?**
+    e.g
+    Input tag are empty elements.
+    
