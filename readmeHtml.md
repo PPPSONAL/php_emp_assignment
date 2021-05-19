@@ -146,6 +146,53 @@ SVG is a language for describing 2D graphics in XML. / Canvas draws 2D graphics,
 SVG is XML based, which means that every element is available within the SVG DOM.  / Canvas is rendered pixel by pixel. 
 ```    
 **What are empty elements in HTML ?**
-    e.g
+```    e.g
     Input tag are empty elements.
+```    
+   
+**How would you approach fixing browser-specific styling issues?**    
+```
+    1) use a separate style sheet that only loads when that specific browser is being used.
+    2) Use libraries like Bootstrap that already handles these styling issues for you
+```
+**What are the different ways to visually hide content**
+    display:none or visibility: hidden
+    
+**Are you familiar with styling SVG? **
+```
+    we can draw any shape in svg with specific attributes.
+    e.g  
+   <rect
+  x="10"
+  y="10"
+  width="100"
+  height="100"
+  stroke="blue"
+  fill="purple"
+  fill-opacity="0.5"
+  stroke-opacity="0.8"
+/>
+```
+    
+**Describe pseudo-elements and discuss what they are used for.**
+```
+    pseudo-element is a keyword added to a selector that allow you style a specific part of the selected element.
+    e.g
+    :first-line and :first-letter
+    :before, :after
+    
+```  
+**Explain your understanding of the box model**
+```
+    Html Elements follow some rule is called box model
+    Like
+    1) The dimensions of a block element are calculated by width, height, padding, borders, and margins.
+    2) If no height is specified, a block element will be as high as the content it contains, plus padding
+    3) If no width is specified, element will expand to fit the width of its parent minus padding.
+    4) By default, paddings and borders are not part of the width and height of an element.
+    
+```    
+   
+    
+    
     
