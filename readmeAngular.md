@@ -55,7 +55,12 @@ There are two approaches to handle form data (user inputs) – reactive and temp
    These forms are scalable, robust and testable.
 
 ```
-
+What is the difference between RouterModule forRoot () and RouterModule forChild ()?
+```
+forRoot creates a module that contains all the directives, the given routes, and the router service itself. 
+forChild creates a module that contains all the directives and the given routes, but does not include the router service. 
+It registers the routers and uses the router service created at the root level.
+```
 Diffrentiates between AngularJS and Angular 
 ```
 So very first difference is language, While JavaScript is the recommended language for AngularJS, TypeScript is the recommended language for Angular
