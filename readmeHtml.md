@@ -26,39 +26,57 @@ geolocation API
 ```
 
 **Describe the difference between a cookie, sessionStorage and localStorage.**
-```
-<ul>
-<li>Capacity: 4KB</li>
-<li>Accessible from: Any window</li>
-<li>Expiration: Manually set</li>
-<li>Storage location: Browser and server</li>
-<li>Sent with requests: Yes</li>
-<li>Blockable by users: Yes</li>
-<li>Editable by users: Yes</li>
-</ul>
-<h3 class="card-body-title txt-150 fs-lg md:fs-xl f-alt">Local storage</h3>
-<p>Local storage stores a larger amount of data on the client's computer in a key-value pair format and has no expiration date. Data is never transferred to the server and is accessible via JavaScript and HTML5.</p>
-<ul>
-<li>Capacity: 10MB</li>
-<li>Accessible from: Any window</li>
-<li>Expiration: Never</li>
-<li>Storage location: Browser only</li>
-<li>Sent with requests: No</li>
-<li>Blockable by users: Yes</li>
-<li>Editable by users: Yes</li>
-</ul>
-<h3 class="card-body-title txt-150 fs-lg md:fs-xl f-alt">Session storage</h3>
-<p>Session storage stores a larger amount of data on the client's computer only for the current session, expiring the data on tab close. Data is never transferred to the server and is accessible client-side from the same tab.</p>
-<ul>
-<li>Capacity: 5MB</li>
-<li>Accessible from: Same tab</li>
-<li>Expiration: On tab close</li>
-<li>Storage location: Browser only</li>
-<li>Sent with requests: No</li>
-<li>Blockable by users: Yes</li>
-<li>Editable by users: Yes</li>
-</ul>   
-```   
+<table class="primary-col"><thead><tr><th></th>
+<th>Cookies</th>
+<th>Local storage</th>
+<th>Session storage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Capacity</td>
+<td>4KB</td>
+<td>10MB</td>
+<td>5MB</td>
+</tr>
+<tr>
+<td>Accessible from</td>
+<td>Any window</td>
+<td>Any window</td>
+<td>Same tab</td>
+</tr>
+<tr>
+<td>Expiration</td>
+<td>Manually set</td>
+<td>Never</td>
+<td>On tab close</td>
+</tr>
+<tr>
+<td>Storage location</td>
+<td>Browser and server</td>
+<td>Browser only</td>
+<td>Browser only</td>
+</tr>
+<tr>
+<td>Sent with requests</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Blockable by users</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Editable by users</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
 
 **Describe the difference between <script>, <script async> and <script defer>.**
 **Why is it generally a good idea to position CSS <link>s between <head></head> and JS <script>s just before </body>? Do you know any exceptions?**
