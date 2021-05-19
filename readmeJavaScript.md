@@ -1,3 +1,5 @@
+https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/questions/coding-questions.md
+
 **Explain event delegation**
 ```
 is a simple technique by which you add a single event handler to a parent element,
@@ -118,3 +120,14 @@ undefined
 
 bar
 undefined
+
+
+
+**Ways to Improve Your Website Performance**
+
+Code your site for mobile-first quality and speed. ...
+Reduce image size. ...
+Try a CDN. ...
+Cache as much as possible. ...
+Reduce the number of HTTP requests. ...
+Load JavaScript asynchronously. ...
