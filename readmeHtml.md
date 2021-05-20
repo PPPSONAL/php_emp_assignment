@@ -1,6 +1,7 @@
 **What does a doctype do?**
 ```
-    Doctype stands for Document Type Declaration. It informs the web browser about the type and version of HTML used in building the web document.
+    Doctype stands for Document Type Declaration. 
+    It informs the web browser about the type and version of HTML used in building the web document.
 ```
 
 **What kind of things must you be wary of when designing or developing for multilingual sites?**
@@ -97,7 +98,8 @@ geolocation API
 <tr>
 <td><code>async</code></td>
 <td><em>Load-first order</em>. Their document order doesn’t matter – which loads first runs first</td>
-<td>Irrelevant. May load and execute while the document has not yet been fully downloaded. That happens if scripts are small or cached, and the document is long enough.</td>
+<td>Irrelevant. May load and execute while the document has not yet been fully downloaded. 
+    That happens if scripts are small or cached, and the document is long enough.</td>
 </tr>
 <tr>
 <td><code>defer</code></td>
