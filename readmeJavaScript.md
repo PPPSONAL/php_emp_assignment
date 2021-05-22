@@ -1,5 +1,16 @@
 https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/questions/coding-questions.md
 
+**promise states in javascript**
+```
+Promise has four states:
+
+fulfilled: Action related to the promise succeeded
+rejected: Action related to the promise failed
+pending: Promise is still pending i.e not fulfilled or rejected yet
+settled: Promise has fulfilled or rejected
+
+```
+
 **Explain event delegation**
 ```
 is a simple technique by which you add a single event handler to a parent element,
