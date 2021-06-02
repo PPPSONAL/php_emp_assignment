@@ -1,6 +1,4 @@
 https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/questions/coding-questions.md
-
-<script>
     ```
     1) Program to count all string indivivual character count and it's substraction of upper case and lower case 
     
@@ -59,7 +57,6 @@ https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/
     
     
     ```
-</script>
 
 
 
