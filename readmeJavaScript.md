@@ -1,5 +1,68 @@
 https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/questions/coding-questions.md
 
+<script>
+    
+    1) Program to count all string indivivual character count and it's substraction of upper case and lower case 
+    
+    var x = "aaaAAAAAbbbBBbCCCCCccDDDDeeeeeEEEEE";
+    arr = {a:'A',b:'B',c:'C',d:'D',e:'E',f:'F',g:'G',h:'H','i':'I'};
+    var newcount = [];
+    for(var index in arr){
+        var indexEle = new RegExp(index, "g");
+        var str = new RegExp(arr[index], "g");
+        var cap = x.match(str)||[].length;
+        var lower = x.match(indexEle)||[].length;
+        if(typeof lower.length != 'undefined'){ 
+            lower = lower.length;
+        }else{
+            lower = 0;
+        }
+        newcount[arr[index]+"-"+index] = parseInt(cap.length) - parseInt(lower);
+    }
+    console.log(newcount);
+    
+    **ans**:[A-a: 2,B-b: -2,C-c: 3,D-d: 4,E-e: 0,F-f: NaN,G-g: NaN,H-h: NaN,I-i: NaN]
+    
+    2)
+    var x= 10;
+    function name(){
+        console.log(x);
+        var x=5;
+    }
+    name();
+    
+    **ans**: undefined
+    
+    3)console.log("test"+6+16);
+     console.log(6+16+"test");
+    **ans**: 
+            test616 
+            22test
+    
+    4)var promise = new Promise(function(resolve, reject){
+                        reject();
+                    });
+                    promise.then(function(val){
+                        console.log("success 1");
+                    });
+    
+    **ans**: Uncaught (in promise) undefined
+    
+    var promise = new Promise(function(resolve, reject){
+                    resolve();
+                });
+                promise.then(function(val){
+                    console.log("success 1");
+                });
+    **ans**: success 1
+    
+    
+    
+    
+</script>
+
+
+
 **promise states in javascript**
 ```
 Promise has four states:
