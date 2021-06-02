@@ -1,6 +1,6 @@
 https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/questions/coding-questions.md       
 
-    ```
+```
     1) Program to count all string indivivual character count and it's substraction of upper case and lower case 
     
     var x = "aaaAAAAAbbbBBbCCCCCccDDDDeeeeeEEEEE";
@@ -57,7 +57,7 @@ https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/
 
     
     
-    ```
+```
 
 
 
