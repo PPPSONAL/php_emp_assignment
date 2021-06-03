@@ -159,7 +159,16 @@ setTimeout(() => {
     }, 2000);
 ```
 **differences between variables created using let, var or const**
-https://alligator.io/js/var-let-const/
+
+We can re-declared and update, var variables
+we can’t re-declared, but can update let variables
+we can’t re-declared and update, but can update object, const variables
+
+we can declare global variable by using var and const 
+but we change the value of variable declared with var instead we can't change value of variable declared with const
+
+we can't declared global variable by using let
+
 
 **difference between while and do-while loops in JavaScript**
 ```
