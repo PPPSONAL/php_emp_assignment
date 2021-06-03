@@ -1,4 +1,5 @@
 https://github.com/h5bp/Front-end-Developer-Interview-Questions/blob/master/src/questions/coding-questions.md       
+https://docs.google.com/document/d/1pIgrd0NwbCPLu-hj1I4G_qC9FlCqYPub/edit
 
 ```
     1) Program to count all string indivivual character count and it's substraction of upper case and lower case 
@@ -160,6 +161,8 @@ setTimeout(() => {
 ```
 **differences between variables created using let, var or const**
 ```
+https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/#:~:text=var%20declarations%20are%20globally%20scoped%20or%20function%20scoped%20while%20let,the%20top%20of%20their%20scope.
+
 1)var declarations are globally scoped or function scoped while let and const are block scoped.
 2)  var variables can be updated and re-declared within its scope; 
     let variables can be updated but not re-declared; 
