@@ -519,16 +519,28 @@ Difference b/w SQL and NoSql
 ```
 
 **find the number of employee of each department**
-```SELECT emp_dept, COUNT(*) FROM emp_details GROUP BY emp_dept;```
+
+```
+SELECT emp_dept, COUNT(*) FROM emp_details GROUP BY emp_dept;
+```
 
 **find the sum of salary of emp where number of employees greater than 5. **
-```select * from (select dept as dept, sum(salary) as sumofSalary, count(name) as emp_count from scientist  GROUP BY dept) AS T where emp_count > 2```
+
+```
+select * from (select dept as dept, sum(salary) as sumofSalary, count(name) as emp_count from scientist  GROUP BY dept) AS T where emp_count > 2
+```
 
 **find max salary of emp of each department**
-```SELECT max(salary),name  FROM emp Group by dept_id;```
+
+```
+SELECT max(salary),name  FROM emp Group by dept_id;
+```
 
 **how to delete duplicate records in mysql keeping one record**
-```Delete from emp where id Not in (SELECT max(id) as id FROM emp group by emailId having count(*) >1);```
+
+```
+Delete from emp where id Not in (SELECT max(id) as id FROM emp group by emailId having count(*) >1);
+```
 
 **Joins for many to many relationship**
 ```
@@ -575,14 +587,18 @@ JOIN project on (project.id=emp_project.projectId);
 ```
 
 **Can you tell the order of SQL SELECT statement?**
-```SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY ```
+```
+SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY
+```
 
 **What is the order of query execution in subqueries?**
 
 SQL executes innermost sub query first, and then the next level. The results of the sub query are the query conditions of the primary query.
 
-** SELECT statement find the version of the server you are running and print the name of the current database? **
-```SELECT VERSION(), DATABASE();```
+**SELECT statement find the version of the server you are running and print the name of the current database?**
+```
+SELECT VERSION(), DATABASE();
+```
 
 
 **HTML**
