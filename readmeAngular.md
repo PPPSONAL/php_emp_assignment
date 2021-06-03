@@ -233,6 +233,17 @@ and it compiles the templates after the browser loaded your bundles
       ng build
       ng serve
 ```
+**tsc vs ngc**
+```
+tsc is a TypeScript compiler, 
+which takes in the TypeScript code, compiles it, and produces some JavaScript code, browser executable code.
+
+ngc is an Angular-specific compiler. 
+It doesn't turn the TypeScript code into JavaScript. 
+It does a "finishing touch" to make your app bundles ready for rendering by the browser.
+we can say it complies the templates.
+```
+
 Please explain the digest cycle in Angular?
 ```
 The process of monitoring the watchlist in order to track changes in the value of the watch variable is termed the digest cycle in Angular.
