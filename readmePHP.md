@@ -515,24 +515,74 @@ Query to get the 31st highest salary.
 SELECT DISTINCT(Salary) FROM table ORDER BY Salary DESC LIMIT n,1
 What is difference between stored procedures and functions 
 what is current version of mysql
-Difference b/w SQL and NoSql
+Difference b/w SQL and NoSql	
+```
+
 **find the number of employee of each department**
-	SELECT emp_dept, COUNT(*) FROM emp_details GROUP BY emp_dept;
+```SELECT emp_dept, COUNT(*) FROM emp_details GROUP BY emp_dept;```
 
 **find the sum of salary of emp where number of employees greater than 5. **
-	select * from (select dept as dept, sum(salary) as sumofSalary, count(name) as emp_count from scientist  GROUP BY dept) AS T where emp_count > 2
+```select * from (select dept as dept, sum(salary) as sumofSalary, count(name) as emp_count from scientist  GROUP BY dept) AS T where emp_count > 2```
+
+**find max salary of emp of each department**
+```SELECT max(salary),name  FROM emp Group by dept_id;```
+
+**how to delete duplicate records in mysql keeping one record**
+```Delete from emp where id Not in (SELECT max(id) as id FROM emp group by emailId having count(*) >1);```
+
+**Joins for many to many relationship**
+```
+CREATE TABLE emp (
+  id INTEGER PRIMARY KEY,
+  name TEXT NOT NULL,
+  emailId TEXT NOT NULL
+);
+
+INSERT INTO emp VALUES (1,'sonal','sonalp@gmail.com');
+INSERT INTO emp VALUES (2,'sonal123','sonaddvdlp@gmail.com');
+INSERT INTO emp VALUES (3,'sonal23456','sonalssdp@gmail.com');
+
+CREATE TABLE project (
+  id INTEGER PRIMARY KEY,
+  project_name TEXT NOT NULL
+);
+
+INSERT INTO project VALUES (1,'UPN');
+INSERT INTO project VALUES (2,'UDLA');
+INSERT INTO project VALUES (3,'MOOX');
+
+CREATE TABLE emp_project (
+  empId INTEGER NOT NULL,
+  projectId INTEGER NOT NULL,
+  FOREIGN KEY (empId) REFERENCES user (id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  FOREIGN KEY (projectId) REFERENCES role (id) ON DELETE RESTRICT ON UPDATE CASCADE,
+  PRIMARY KEY (empId, projectId)
+);
+
+INSERT INTO emp_project VALUES (1,1);
+INSERT INTO emp_project VALUES (1,2);
+INSERT INTO emp_project VALUES (1,3);
+INSERT INTO emp_project VALUES (2,1);
+INSERT INTO emp_project VALUES (2,2);
+INSERT INTO emp_project VALUES (3,2);
+INSERT INTO emp_project VALUES (3,3);
+
+-- fetch some values
+SELECT emp.id, emp.emailId, emp.name, project.id AS project_id, project.project_name
+FROM emp JOIN emp_project on (emp.id=emp_project.empId) 
+JOIN project on (project.id=emp_project.projectId);
+
+```
 
 **Can you tell the order of SQL SELECT statement?**
-SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY
+```SELECT, FROM, WHERE, GROUP BY, HAVING, and ORDER BY ```
 
 **What is the order of query execution in subqueries?**
 
 SQL executes innermost sub query first, and then the next level. The results of the sub query are the query conditions of the primary query.
 
 ** SELECT statement find the version of the server you are running and print the name of the current database? **
-	SELECT VERSION(), DATABASE();
-	
-```
+```SELECT VERSION(), DATABASE();```
 
 
 **HTML**
