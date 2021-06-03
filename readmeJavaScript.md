@@ -159,16 +159,16 @@ setTimeout(() => {
     }, 2000);
 ```
 **differences between variables created using let, var or const**
-
-We can re-declared and update, var variables
-we can’t re-declared, but can update let variables
-we can’t re-declared and update, but can update object, const variables
-
-we can declare global variable by using var and const 
-but we change the value of variable declared with var instead we can't change value of variable declared with const
-
-we can't declared global variable by using let
-
+```
+1)var declarations are globally scoped or function scoped while let and const are block scoped.
+2)  var variables can be updated and re-declared within its scope; 
+    let variables can be updated but not re-declared; 
+    const variables can't be updated and re-declared.
+    
+3)They are all hoisted to the top of their scope. 
+But while var variables are initialized with undefined, 
+let and const variables are not initialized.
+```
 
 **difference between while and do-while loops in JavaScript**
 ```
