@@ -515,6 +515,26 @@ SELECT DISTINCT(Salary) FROM table ORDER BY Salary DESC LIMIT n,1
 What is difference between stored procedures and functions 
 what is current version of mysql
 Difference b/w SQL and NoSql	
+
+Data Definition Language (DDL) commands:
+
+CREATE to create a new table or database.
+ALTER for alteration.
+Truncate to delete data from the table.
+DROP to drop a table.
+RENAME to rename a table.
+Data Manipulation Language (DML) commands:
+
+INSERT to insert a new row.
+UPDATE to update an existing row.
+DELETE to delete a row.
+MERGE for merging two rows or two tables.
+Data Control Language (DCL) commands:
+
+COMMIT to permanently save.
+ROLLBACK to undo the change.
+SAVEPOINT to save temporarily.
+
 ```
 
 **find the number of employee of each department**
