@@ -432,6 +432,12 @@ Abstract, Interface, traits
 	Like abstract classes, Interfaces cannot be instantiated, they can only be implemented by classes or extended by other interfaces.
 	Interface is a common way to achieve full abstraction
 	
+	Abstract class / Interface
+	1)Interfaces cannot have properties, while abstract classes can
+        2)All interface methods must be public, while abstract class methods is public or protected
+	3)All methods in an interface are abstract where aleast one method needs to abstract in abstract class
+	4)Abstract class can extend another class and implement multiple interfaces.Interface can't provide the implementation of abstract class.
+	
 	Traits 
 	Laravel traits are a group of functions that you include within another class. 
 	A trait is like an abstract class. You cannot instantiate directly, but its methods can be used in concreate class.
@@ -442,13 +448,6 @@ Abstract, Interface, traits
 	Use keyword to use Traits
 	(three dots ...) and is referred to as either the splat operator or the scatter operator
 	function bar(...$arguments) to achieve method overloading in php
-	
-1) Abstract class can have abstract and non-abstract methods.	Interface can have only abstract methods. Since Java 8, it can have default and static methods also.
-2) Abstract class doesn't support multiple inheritance.	Interface supports multiple inheritance.
-3) Abstract class can have final, non-final, static and non-static variables.	Interface has only static and final variables.
-4) Abstract class can provide the implementation of interface.	Interface can't provide the implementation of abstract class.
-5) The abstract keyword is used to declare abstract class.	The interface keyword is used to declare interface.
-6) An abstract class can extend another Java class and implement multiple Java interfaces.	An interface can extend another Java interface only.
 
 
 Error types in php
