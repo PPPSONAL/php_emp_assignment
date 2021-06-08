@@ -236,6 +236,10 @@ public class Mobile : IMobile, ITelephone
     }     
 }
 ```
+**What is Namespace**
+```
+Virtual directory structure for classes in global space.
+```
 
 **Difference between Inheritance and Polymorphism**
 ```
