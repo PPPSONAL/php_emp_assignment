@@ -69,6 +69,9 @@ This is because of accessibility restriction.
 
 **Polymorphism** 
 We can say Polymorphism is a design pattern where classes can have same or different functionality when they share a common interfaces.
+Real life example,
+
+A person at the same time can have different characteristic. Like a man at the same time is a father, a husband, an employee. So the same person posses different behavior in different situations.
 
 There were 2 of Polymorphism
     1)Compile time (function overloading)Method Overloading: This allows us to have more than one methods with same name in a class that differs in signature.
@@ -232,6 +235,18 @@ public class Mobile : IMobile, ITelephone
             Console.WriteLine("Dial a number");  
     }     
 }
+```
+
+**Difference between Inheritance and Polymorphism**
+```
+Main diff I can say is Inheritance mainly work with classes and Polymorphism work with the functions in side classes
+```
+**What is Dependency Injection**
+
+
+**Difference between Inheritance and Dependency Injection **
+```
+Inheritance make code more tight couple where Dependency Injection make our code loosly couple
 ```
 
 
