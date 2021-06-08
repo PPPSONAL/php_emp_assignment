@@ -56,6 +56,22 @@ https://docs.google.com/document/d/1pIgrd0NwbCPLu-hj1I4G_qC9FlCqYPub/edit
                 });
     **ans**: success 1
 
+5)rogram to reverse the string 
+var str = 'I am sonal pradip panchal';
+var arr = str.split(' ');
+var resstr = '';
+for(var j = 0; j<= arr.length-1;j++){
+    var newstr = arr[j];
+    var revstr = '';
+    for(var i = newstr.length-1; i>=0;i--){
+        revstr+=newstr[i];
+    }
+    arr[j] = revstr;
+    resstr=arr.join(' ');
+}
+console.log(resstr);
+
+console.log('I ma lanos pidarp lahcnap');
     
     
 ```
