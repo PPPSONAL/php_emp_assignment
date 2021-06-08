@@ -1,3 +1,7 @@
+
+https://www.geeksforgeeks.org/what-is-late-static-bindings-in-php/
+
+
 **OPPs**
 
 ```
@@ -229,6 +233,7 @@ public class Mobile : IMobile, ITelephone
     }     
 }
 ```
+
 
 **Call By Value**
 ``` 
@@ -646,6 +651,11 @@ the difference is that while data in localStorage doesn't expire, data in sessio
 **Laravel **
 	https://www.guru99.com/laravel-interview-questions.html
 
+**The Front Controller Design Pattern?**
+```
+The front controller (index.php)
+
+```
 What is Rate limit?
 ```
 Rate limiting is the control of the number of requests per unit time. It can be applied to ports, IPs, routes, etc.
