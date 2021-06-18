@@ -486,6 +486,12 @@ Abstract, Interface, traits
 	3)All methods in an interface are abstract where aleast one method needs to abstract in abstract class
 	4)Abstract class can extend another class and implement multiple interfaces.Interface can't provide the implementation of abstract class.
 	
+	when to use both
+	1) If we are designing small, concise bits of functionality, use interfaces. If we are designing large functional units, use an abstract class.
+	2) An abstract class is a good choice if we are using the inheritance concept since it provides a common base class implementation to derived classes.
+	3) If we want to add new methods in the future, then an abstract class is a better choice. Because if we add new methods to an interface, then all of the classes that already implemented that interface will have to be changed to implement the new methods.
+
+
 	Traits 
 	Laravel traits are a group of functions that you include within another class. 
 	A trait is like an abstract class. You cannot instantiate directly, but its methods can be used in concreate class.
