@@ -93,7 +93,7 @@ This is because of accessibility restriction.
 
 **Polymorphism** 
 We can say Polymorphism is a design pattern where classes can have same or different functionality when they share a common interfaces.
-Real life example,
+Real life example.
 
 A person at the same time can have different characteristic. Like a man at the same time is a father, a husband, an employee. So the same person posses different behavior in different situations.
 
