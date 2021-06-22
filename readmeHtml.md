@@ -182,12 +182,20 @@ SVG is XML based, which means that every element is available within the SVG DOM
 />
 ```
     
-**Describe pseudo-elements and discuss what they are used for.**
+**Describe pseudo-elements and  used for.**
 ```
     pseudo-element is a keyword added to a selector that allow you style a specific part of the selected element.
     e.g
-    :first-line and :first-letter
-    :before, :after
+    p::first-letter 
+    H1::before, H1::after
+    
+    Pseudo-class => pseudo-class is used to define a special state of an element.
+    a:link
+    a:hover
+    a:active
+    p:first-child
+    
+   
     
 ```  
 **Explain your understanding of the box model**
