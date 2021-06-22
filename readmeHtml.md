@@ -160,6 +160,12 @@ SVG is XML based, which means that every element is available within the SVG DOM
 **What are the different ways to visually hide content**
     display:none or visibility: hidden
     
+   **different betw display:none or visibility: hidden**
+    visibility:hidden hides the element, but it still takes up space in the layout.
+
+    display:none removes the element from the document. It does not take up any space.
+    
+    
 **Are you familiar with styling SVG? **
 ```
     we can draw any shape in svg with specific attributes.
