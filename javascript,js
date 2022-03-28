@@ -1,0 +1,37 @@
+-- what will be output of desert.type in console
+	
+1)	const desert = {type: 'pie'}; 
+		desert.type = 'pudding';
+		const second = desert; 
+		second.type = 'fruits';
+		console.log(desert.type) //fruits
+		console.log(second.type) //fruits
+		
+2) console.log(typeof "blackberry") // string
+
+3) let obj = {} access a.b without having error undefined //
+
+4) var arr = ['cat','dog','rabbit'];
+arr[100] = 'snake';
+console.log(a.length) // 101
+
+5) let raininforce  = ['a', 'b', 'c', 'd']
+raininforce.splice(0,2)
+console.log(raininforce)
+
+6) let bear = {
+			sound:"roar",
+			roar(){
+			console.log(this.sound)
+			}} 
+			bear.sound = "grant";
+			let bearsound = bear.roar;
+			bearsound()
+			//
+			
+7)			
+
+
+
+
+
